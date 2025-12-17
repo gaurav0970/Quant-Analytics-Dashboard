@@ -240,22 +240,8 @@ POST /api/backtest
 
 ## 🎥 Video Demonstration
 
-### GitHub Video Upload (Recommended)
-
-Create a directory in the repository:
-```
-/assets/demo/
-```
-
-Upload your video file:
-```
-/assets/demo/platform_walkthrough.mp4
-```
-
-Add the following line to embed the video:
-
 ```markdown
-[![Platform Walkthrough](https://github.com/<your-username>/<repo-name>/assets/demo/platform_walkthrough.mp4)](https://github.com/<your-username>/<repo-name>/assets/demo/platform_walkthrough.mp4)
+[![Platform Walkthrough](https://drive.google.com/file/d/1jsRF9eArx7Eb7MPijx2f3Vm7Vg3SxWdn/view?usp=sharing)
 ```
 
 GitHub will automatically render the video inline.
@@ -299,6 +285,7 @@ lsof -i :8000
 - **Port 8000 in use**: Kill the process or use a different port
 - **PostgreSQL not ready**: Wait 10 seconds after docker-compose starts
 - **Redis connection failed**: Verify Redis is running and accessible
+
 
 
 
