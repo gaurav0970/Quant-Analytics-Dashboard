@@ -59,9 +59,9 @@ The system is modular, production-oriented, and Docker-ready.
 
 ## Architecture
 
-### System Architecture Overview
-
-![Quant Analytics Platform Architecture](assets/architecture.png)
+<p align="center">
+  <img src="assets/architecture.png" alt="Quant Analytics Platform Architecture" width="900"/>
+</p>
 
 ### Live Data Flow and Runtime Behavior
 
@@ -238,23 +238,9 @@ POST /api/backtest
 
 **Full API Documentation:** http://localhost:8000/docs
 
-## 🎥 Video Demonstration
+🎥 Video Demonstration
 
-```markdown
-[![Platform Walkthrough](https://drive.google.com/file/d/1jsRF9eArx7Eb7MPijx2f3Vm7Vg3SxWdn/view?usp=sharing)
-```
-
-GitHub will automatically render the video inline.
-
-**Video Contents (25 min):**
-- Architecture overview
-- WebSocket data ingestion
-- Price monitor dashboard
-- Pair trading analytics
-- Statistical tests
-- Mean reversion backtest
-- Alert system
-- Data export
+https://drive.google.com/file/d/1jsRF9eArx7Eb7MPijx2f3Vm7Vg3SxWdn/view?usp=sharing
 
 ## Troubleshooting
 
@@ -285,6 +271,7 @@ lsof -i :8000
 - **Port 8000 in use**: Kill the process or use a different port
 - **PostgreSQL not ready**: Wait 10 seconds after docker-compose starts
 - **Redis connection failed**: Verify Redis is running and accessible
+
 
 
 
