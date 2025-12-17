@@ -58,8 +58,10 @@ The system is modular, production-oriented, and Docker-ready.
 - Redis-backed real-time triggering
 
 ## Architecture
-![Quant Analytics Platform Architecture](assets/Architecture Diagram.png)
 
+### System Architecture Overview
+
+![Quant Analytics Platform Architecture](assets/architecture.png)
 
 ### Live Data Flow and Runtime Behavior
 
@@ -297,5 +299,6 @@ lsof -i :8000
 - **Port 8000 in use**: Kill the process or use a different port
 - **PostgreSQL not ready**: Wait 10 seconds after docker-compose starts
 - **Redis connection failed**: Verify Redis is running and accessible
+
 
 
