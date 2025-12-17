@@ -58,16 +58,8 @@ The system is modular, production-oriented, and Docker-ready.
 - Redis-backed real-time triggering
 
 ## Architecture
+![Quant Analytics Platform Architecture](assets/Architecture Diagram.png)
 
-```
-Binance WebSocket
-        |
-FastAPI Backend (Async)
-        |
-PostgreSQL (Ticks & OHLCV)   Redis (Cache & Alerts)
-        |
-Streamlit Dashboard
-```
 
 ### Live Data Flow and Runtime Behavior
 
@@ -124,7 +116,6 @@ These features are intentionally data-dependent to ensure statistical validity.
 ### Docker Setup (Recommended)
 
 ```bash
-cd "C:\Users\gaura\Downloads\try 3"
 docker-compose up --build
 ```
 
@@ -142,7 +133,6 @@ docker-compose down
 #### 1. Environment Setup
 
 ```bash
-cd "C:\Users\gaura\Downloads\try 3"
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
@@ -246,13 +236,6 @@ POST /api/backtest
 
 **Full API Documentation:** http://localhost:8000/docs
 
-## Performance
-
-- **Tick ingestion**: ~1000 ticks per second
-- **Analytics latency**: <500 ms
-- **Dashboard refresh**: 1–2 seconds
-- **Storage footprint**: ~500 MB per day (5 symbols)
-
 ## 🎥 Video Demonstration
 
 ### GitHub Video Upload (Recommended)
@@ -314,3 +297,4 @@ lsof -i :8000
 - **Port 8000 in use**: Kill the process or use a different port
 - **PostgreSQL not ready**: Wait 10 seconds after docker-compose starts
 - **Redis connection failed**: Verify Redis is running and accessible
+
