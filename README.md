@@ -298,3 +298,4 @@ lsof -i :8000
 - **PostgreSQL not ready**: Wait 10 seconds after docker-compose starts
 - **Redis connection failed**: Verify Redis is running and accessible
 
+
