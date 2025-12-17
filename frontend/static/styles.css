@@ -1,0 +1,62 @@
+/* Custom styles for Streamlit app */
+
+/* Main container */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border-left: 4px solid #1E88E5;
+}
+
+/* Alert styling */
+.alert-box {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    border-left: 4px solid;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-left-color: #28a745;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-left-color: #dc3545;
+}
+
+/* Data table styling */
+[data-testid="stDataFrame"] {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/* Button styling */
+.stButton > button {
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+/* Selectbox styling */
+[data-testid="stSelectbox"] > div {
+    border-radius: 0.5rem;
+}
+
+/* Tabs styling */
+[data-testid="stTabs"] {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
